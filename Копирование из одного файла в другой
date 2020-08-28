@@ -1,4 +1,4 @@
-public class xxx
+public class Copy
 {
     public static void main(String[] args) throws IOException {
 
