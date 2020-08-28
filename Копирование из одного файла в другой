@@ -1,4 +1,4 @@
-public class Copy
+public class CopyFromFileToFile
 {
     public static void main(String[] args) throws IOException {
 
