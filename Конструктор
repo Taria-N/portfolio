@@ -1,0 +1,43 @@
+public class Constructor
+{
+    public static void main(String[] args) throws IOException {
+
+        Cat cat1 = new Cat("Kitty");
+        Cat cat2 = new Cat ("Matroskin", 5);
+        Cat cat3 = new Cat("Garfield", 7,"red");
+
+
+    }
+
+    public static class Cat {
+
+        String name;
+        int age;
+        String color;
+
+
+        public Cat(String name) {
+            this.name = name;
+            System.out.println("Hello from the first constructor!");
+
+        }
+
+        public Cat(String name, int age) {
+            this.name = name;
+            this.age = age;
+            System.out.println("Hello from the second constructor!");
+
+        }
+
+        public Cat(String name, int age, String color) {
+            this.name = name;
+            this.age = age;
+            this.color = color;
+            System.out.println("Hello from the third constructor!");
+
+        }
+
+    }
+
+
+}
