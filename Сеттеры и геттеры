@@ -4,7 +4,7 @@ public class setGey
 
         Cat cat1 = new Cat();
         cat1.setName("Kitty");
-        cat1.setAge(5);
+        cat1.setAge(3);
         System.out.println(cat1.getName() + ", " + cat1.getAge());
         Cat cat2 = new Cat ();
         cat2.setName("Tom");
