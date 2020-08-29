@@ -1,0 +1,52 @@
+public class setGey
+{
+    public static void main(String[] args) throws IOException {
+
+        Cat cat1 = new Cat();
+        cat1.setName("Kitty");
+        cat1.setAge(5);
+        System.out.println(cat1.getName() + ", " + cat1.getAge());
+        Cat cat2 = new Cat ();
+        cat2.setName("Tom");
+        cat2.setAge(7);
+        System.out.println(cat2.getName() + ", " + cat2.getAge());
+
+
+
+
+    }
+
+    public static class Cat {
+
+        private String name;
+        private int age;
+
+        public void setName(String name) {
+            if (name.isEmpty()) {
+                System.out.println("Don't enter an empty name!");
+                System.exit(0);
+            }
+            else
+                this.name = name;
+
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setAge(int age) {
+            if (age < 0) {
+                System.out.println("Enter correct age, please!");
+                System.exit(0);
+            } else
+                this.age = age;
+        }
+
+
+        public int getAge() {
+            return age;
+        }
+    }
+
+    }
