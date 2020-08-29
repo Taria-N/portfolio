@@ -37,7 +37,7 @@ public class setGey
 
         public void setAge(int age) {
             if (age < 0) {
-                System.out.println("Enter correct age, please!");
+                System.out.println("Enter the correct age, please!");
                 System.exit(0);
             } else
                 this.age = age;
