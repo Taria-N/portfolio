@@ -1,0 +1,29 @@
+public class forEach {
+    public static void main(String[] args) throws IOException {
+
+        int[] list = {1, 5, 12, -9, 3, -12};
+        for(int x: list) { //(тип_данных название_переменной: название массива
+            System.out.println(x);
+        }
+        System.out.println();
+
+        String[] array = new String[2];
+        array[0] = "Black";
+        array[1] = "White";
+        for(String str: array) {
+            System.out.println(str);
+        }
+
+        System.out.println();
+
+        int[] list1 = {5, 9, 123, 8, 17, -139};
+        int sum = 0;
+        for(int y: list1) {
+            sum = sum+y;
+
+        }
+        System.out.println();
+        System.out.println("Sum is: " + sum);
+
+    }
+}
