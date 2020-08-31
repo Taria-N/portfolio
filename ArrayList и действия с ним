@@ -1,0 +1,36 @@
+public class ArrList {
+    public static void main(String[] args) throws IOException {
+
+     ArrayList<String> array = new ArrayList<String>();
+     array.add(0, "red"); // добавление элемента в начало массива
+     array.add(1,"black"); // добавление элемента для определенного индекса
+     array.add("green"); // добавление элемента в конец массива
+     array.add(0, "yellow");
+
+     for(String z: array) {
+            System.out.println(z);
+        }
+
+     int n = array.size(); // получение размера массива
+     System.out.println(n);
+     array.remove(2); // удаление элемента
+     int m = array.size(); // после удаления элемента размер массива сокращается
+     System.out.println(m);
+
+
+     for(String x: array) {
+         System.out.println(x);
+     }
+
+     System.out.println(array.get(1)); // получение элемента по индексу
+
+     array.set(1, "pink"); // замена элемента
+
+     System.out.println(array.get(1));
+
+     for(String y: array) {
+            System.out.println(y);
+        }
+
+    }
+}
