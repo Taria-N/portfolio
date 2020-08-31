@@ -1,0 +1,22 @@
+public class Arrays {
+    public static void main(String[] args) throws IOException {
+
+
+
+     ArrayList<Integer> list1 = new ArrayList<Integer>();
+     Collections.addAll(list1, 3, 6, 77, -1, 0);
+
+     ArrayList<Integer> list2 = new ArrayList<Integer>();
+     Collections.addAll(list2, 33, 16, 50, 100, -99);
+
+     ArrayList<Integer> result = new ArrayList<Integer>();
+
+     result.addAll(list1);
+     result.addAll(list2);
+
+     for(int x: result) {
+         System.out.println(x);
+     }
+     
+    }
+}
