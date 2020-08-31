@@ -1,0 +1,25 @@
+public class moreThanFive {
+    public static void main(String[] args) throws IOException {
+
+     ArrayList<Integer> list = new ArrayList<Integer>();
+
+
+        while (true) {
+            BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
+            String y = read.readLine();
+            if(y.isEmpty()) break;
+
+            int z = Integer.parseInt(y);
+            if(z>5) {
+            } else {
+                list.add(z);
+            }
+        }
+
+        for(int x: list) {
+            System.out.println(x);
+        }
+
+
+    }
+}
