@@ -1,0 +1,34 @@
+public class HashSet {
+    public static void main(String[] args) throws IOException {
+
+        HashSet<String> CountryHashSet = new HashSet<String>(); //создание коллекции set, в которой хранятся неупорядоченные элементы
+        CountryHashSet.add("Russia");
+        CountryHashSet.add("France");
+        CountryHashSet.add("China");
+        CountryHashSet.add("Japan");
+
+        System.out.println(CountryHashSet.size()); //получение размера коллекции
+        CountryHashSet.remove("China"); //удаление элемента
+        System.out.println(CountryHashSet.size());
+
+
+        Iterator<String> iterator = CountryHashSet.iterator(); // получение всех элементов коллекции с помощью итератора
+        while (iterator.hasNext()) {
+            String text = iterator.next();
+            System.out.println(text);
+        }
+
+        HashSet<String> CountryHashSet1 = new HashSet<String>();
+        CountryHashSet1.addAll(CountryHashSet); //добавление всех элементов коллекции в другую коллекцию
+        CountryHashSet1.add("Brazil");
+        CountryHashSet1.add("Russia"); //Эта запись не попадает в сет, так как такое значение уже там присутствует
+        System.out.println(CountryHashSet.contains("Brazil")); //проверка наличия данного элемента в коллекции
+        System.out.println(CountryHashSet1.contains("Brazil"));
+
+        for(String x: CountryHashSet1) {
+            System.out.println(x);
+        }
+
+
+    }
+}
