@@ -1,0 +1,45 @@
+public class Maps {
+    public static void main(String[] args) throws IOException {
+
+
+       HashMap<Integer, String> map = new HashMap<Integer, String>();
+       map.put(1, "Rose");
+       map.put(2, "Mike");
+       map.put(3, "Annie");
+       map.put(4, "Sam");
+
+       System.out.println(map);
+
+       map.put(2, "Jack"); //перезапись значения по ключу
+
+       System.out.println(map);
+
+       System.out.println(map.get(1)); //получение значения по ключу
+
+       map.remove(3); //удаление значения по ключу
+
+       System.out.println(map);
+
+       System.out.println(map.containsKey(6));
+       System.out.println(map.containsValue("Sam"));
+
+       map.size();
+
+       Set<Integer> keys = map.keySet(); //получение всех ключей в коллекцию сет
+       System.out.println(keys);
+
+       ArrayList<String> values = new ArrayList<>(map.values()); //получение всех значений в список
+       System.out.println(values);
+
+       HashMap<Integer, String> map1 = new HashMap<Integer, String>();
+       map1.putAll(map);
+
+       for(Map.Entry entry:map1.entrySet()) { //получение пар "ключ-значение". Интерфейс Map.Entry и метод entrySet позволяют получать именно пары
+           System.out.println(entry);
+       }
+
+
+
+
+    }
+}
